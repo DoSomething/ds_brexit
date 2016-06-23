@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 app.use(express.static(__dirname + '/node_modules/@dosomething/forge/dist'));
+app.use(express.static(__dirname + '/node_modules/@dosomething/forge/assets'));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
